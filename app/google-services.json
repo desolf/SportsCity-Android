@@ -1,0 +1,93 @@
+{
+  "project_info": {
+    "project_number": "600080238142",
+    "firebase_url": "https://sports5938.firebaseio.com",
+    "project_id": "sports5938",
+    "storage_bucket": "sports5938.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:600080238142:android:45e9f6eef0a99a9b",
+        "android_client_info": {
+          "package_name": "com.n1.city"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "600080238142-1nagab7maq9dqpj5f18hnsphq9ldflfu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBD1HF9XAZ4732m11TS_7PstfmbXt9GYEM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:600080238142:android:4e873d9907a3cbbd",
+        "android_client_info": {
+          "package_name": "com.n1.n1live"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "600080238142-p9tj2e40gbv4uhsuom2qolgnq3h64t9b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.n1.n1live",
+            "certificate_hash": "26daba64223d01467d243d3369af25d17575da3b"
+          }
+        },
+        {
+          "client_id": "600080238142-1nagab7maq9dqpj5f18hnsphq9ldflfu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBD1HF9XAZ4732m11TS_7PstfmbXt9GYEM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "600080238142-1nagab7maq9dqpj5f18hnsphq9ldflfu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "600080238142-q6osl6p431b1sjth5jmstt8k1mk0p6ak.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.n1.video"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

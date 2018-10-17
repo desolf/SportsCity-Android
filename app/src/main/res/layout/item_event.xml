@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#0000">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_event_avatar_bg"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:src="#fff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@color/blue_bg_color" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_event_avatar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="2dp"
+        android:src="@drawable/avatar_default"
+        app:layout_constraintBottom_toBottomOf="@+id/img_event_avatar_bg"
+        app:layout_constraintEnd_toEndOf="@+id/img_event_avatar_bg"
+        app:layout_constraintStart_toStartOf="@+id/img_event_avatar_bg"
+        app:layout_constraintTop_toTopOf="@+id/img_event_avatar_bg" />
+
+    <TextView
+        android:id="@+id/event_lbl_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="Lilian Curtis"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/img_event_avatar"
+        app:layout_constraintStart_toEndOf="@+id/img_event_avatar"
+        app:layout_constraintTop_toTopOf="@+id/img_event_avatar" />
+
+    <TextView
+        android:id="@+id/event_lbl_timeago"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="14分鐘前"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="12sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/event_lbl_nickname"
+        app:layout_constraintStart_toEndOf="@+id/event_lbl_nickname" />
+
+    <ImageButton
+        android:id="@+id/event_btn_more"
+        android:layout_width="20dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/btn_more"
+        app:layout_constraintBottom_toBottomOf="@+id/img_event_avatar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/img_event_avatar" />
+
+    <TextView
+        android:id="@+id/event_lbl_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="TextView TextView TextView TextView TextView TextView TextView TextView TextView TextView TextView TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_event_avatar" />
+
+    <com.smarteist.autoimageslider.SliderLayout
+        android:id="@+id/event_img_slider"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:background="#8888"
+        app:layout_constraintDimensionRatio="H,1:1"
+        app:layout_constraintEnd_toEndOf="@+id/event_lbl_description"
+        app:layout_constraintStart_toStartOf="@+id/event_lbl_description"
+        app:layout_constraintTop_toBottomOf="@+id/event_lbl_description" />
+
+    <Button
+        android:id="@+id/event_btn_like"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/icon_like"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/event_img_slider"
+        app:layout_constraintTop_toBottomOf="@+id/event_img_slider" />
+
+    <Button
+        android:id="@+id/event_btn_feed"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/icon_message_main_feed"
+        app:layout_constraintStart_toEndOf="@+id/event_lbl_liked_number"
+        app:layout_constraintTop_toBottomOf="@+id/event_img_image" />
+
+    <Button
+        android:id="@+id/event_btn_share"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/icon_share_main_feed"
+        app:layout_constraintStart_toEndOf="@+id/event_lbl_feed_number"
+        app:layout_constraintTop_toBottomOf="@+id/event_img_image" />
+
+    <TextView
+        android:id="@+id/event_lbl_liked_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="16"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/event_btn_like"
+        app:layout_constraintStart_toEndOf="@+id/event_btn_like"
+        app:layout_constraintTop_toTopOf="@+id/event_btn_like" />
+
+    <TextView
+        android:id="@+id/event_lbl_feed_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="22"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/event_btn_like"
+        app:layout_constraintStart_toEndOf="@+id/event_btn_feed"
+        app:layout_constraintTop_toTopOf="@+id/event_btn_like"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <TextView
+        android:id="@+id/event_lbl_shared_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="5"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/event_btn_like"
+        app:layout_constraintStart_toEndOf="@+id/event_btn_share"
+        app:layout_constraintTop_toTopOf="@+id/event_btn_like"
+        app:layout_constraintVertical_bias="0.4" />
+</android.support.constraint.ConstraintLayout>

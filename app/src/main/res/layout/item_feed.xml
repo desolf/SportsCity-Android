@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#0000">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/feed_img_avatar_bg"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:src="#fff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@color/blue_bg_color" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/feed_img_avatar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="2dp"
+        android:src="@drawable/avatar_default"
+        app:layout_constraintBottom_toBottomOf="@+id/feed_img_avatar_bg"
+        app:layout_constraintEnd_toEndOf="@+id/feed_img_avatar_bg"
+        app:layout_constraintStart_toStartOf="@+id/feed_img_avatar_bg"
+        app:layout_constraintTop_toTopOf="@+id/feed_img_avatar_bg" />
+
+    <TextView
+        android:id="@+id/feed_lbl_nickname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Lilian Curtis"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/feed_img_avatar"
+        app:layout_constraintTop_toTopOf="@+id/feed_img_avatar" />
+
+    <TextView
+        android:id="@+id/feed_lbl_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="哇哇哇~繼續加油\n明天打球嗎？\n我跟朋友投足場地喔。"
+        android:textSize="@dimen/defaultTextSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/feed_lbl_nickname"
+        app:layout_constraintTop_toBottomOf="@+id/feed_lbl_nickname" />
+
+    <TextView
+        android:id="@+id/feed_lbl_datetime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="今天下午3:28"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/feed_lbl_nickname"
+        app:layout_constraintTop_toBottomOf="@+id/feed_lbl_content" />
+
+</android.support.constraint.ConstraintLayout>
